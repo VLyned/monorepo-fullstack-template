@@ -1,36 +1,61 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Dependencies
+# dependencies
 node_modules
 .pnp
 .pnp.js
+.pnpm-store/
 
-# Local env files
+# testing
+coverage
+
+# next.js
+.next/
+out/
+build
+.swc/
+
+# node
+dist/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Testing
-coverage
+# Prisma generated files
+packages/database/zod
 
-# Turbo
+# turbo
 .turbo
 
-# Vercel
-.vercel
+# ui
+dist/
 
-# Build Outputs
-.next/
-out/
-build
-dist
+# nixos stuff
+.direnv
 
+Zone.Identifier
 
-# Debug
-npm-debug.log*
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
-# Misc
-.DS_Store
-*.pem
+# uploads
+packages/lib/uploads
+
+# Vite Timestamps
+*vite.config.*.timestamp-*

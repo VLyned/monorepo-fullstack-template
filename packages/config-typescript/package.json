@@ -1,0 +1,15 @@
+{
+  "name": "@repo/config-typescript",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf node_modules || true"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
